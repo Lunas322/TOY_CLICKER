@@ -1,4 +1,17 @@
+import ClickButton from "../components/ClickButton";
+import { playSound } from "../utils/playSound";
+
 function Clicker() {
+
+const soundCount = (count: number) =>
+  Math.floor(count / 3) + 1;
+
+const soundMap = {
+  1: "clicker1",
+  2: "clicker2",
+  3: "clicker3",
+} as const;
+
   return (
     <div className="min-h-screen bg-zinc-950 flex items-center justify-center">
       <div className="bg-zinc-900 p-6 rounded-[32px] shadow-2xl border border-zinc-800">
@@ -7,26 +20,7 @@ function Clicker() {
 
           {["🐱", "🐰", "🐻", "🍓", "🍩", "🧁", "⭐", "🌈", "💖"].map(
             (item, index) => (
-              <button
-                key={index}
-                className="
-                  w-24 h-24
-                  rounded-3xl
-                  bg-zinc-800
-                  border
-                  border-zinc-700
-                  text-4xl
-                  shadow-[0_6px_0_rgb(39,39,42)]
-                  hover:-translate-y-1
-                  hover:bg-zinc-700
-                  active:translate-y-1
-                  active:shadow-[0_2px_0_rgb(39,39,42)]
-                  transition-all
-                  duration-150
-                "
-              >
-                {item}
-              </button>
+                <ClickButton key={index} index={index} content={item} onClick={()=>playSound(soundMap[soundCount(index) as 1|2|3])}/>
             )
           )}
 
