@@ -1,74 +1,76 @@
-# React + TypeScript + Vite
+# 🎮 개발자용 정서불안 클리커
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+"코드가 안 돌아간다."
 
-Currently, two official plugins are available:
+클릭.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+"에러가 또 났다."
 
-## React Compiler
+클릭.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+"배포했는데 왜 안 되지?"
 
-## Expanding the ESLint configuration
+클릭. 클릭. 클릭.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+최근 정서불안 클리커가 유행하고 있지만, 개발자가 사무실이나 카페에서 실제 클리커를 사용하기엔 눈치가 보입니다.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+특히 옆자리 동료가 집중하고 있는데
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+> 딸깍  
+> 딸깍  
+> 딸깍  
+> 딸깍
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+을 무한 반복하면 팀의 생산성보다 민원이 먼저 올라올 수 있습니다.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+그래서 만들었습니다.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# TOY_CLICKER
+**오로지 개발자의 정신 건강(?)과 주변 사람들의 평화를 위해.**
+
+실물 클리커 없이도 버그를 마주할 때마다 마음껏 클릭할 수 있는 디지털 정서불안 클리커입니다.
+
+---
+
+## ✨ 이런 분들에게 추천합니다
+
+- CSS가 갑자기 깨진 개발자
+- 분명 방금까지 되던 코드가 안 되는 개발자
+- merge 후 프로젝트가 터진 개발자
+- 배포 버튼 누르고 기도하는 개발자
+- "왜?"를 하루에 100번 이상 외치는 개발자
+
+---
+
+## 🛠️ 기술 스택
+
+- React
+- TypeScript
+- React Router
+
+---
+
+## 🚀 주요 기능
+
+- 🖱️ 무한 클릭
+- 🔊 클릭 사운드
+- 😵 스트레스 해소 (개인차 있음)
+- ☕ 카페에서도 사용 가능
+- 🧑‍💻 개발자 친화적
+
+---
+
+## 📌 주의사항
+
+본 프로젝트는 실제로 정신 건강을 개선하지 않습니다.
+
+다만 에러 메시지를 바라보며 아무것도 안 하는 것보다는 클릭하는 것이 심리적으로 도움이 될 수 있습니다.
+
+---
+
+## 👨‍💻 만든 이유
+
+버그는 없어지지 않지만
+
+클릭은 할 수 있으니까.
